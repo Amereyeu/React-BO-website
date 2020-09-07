@@ -1,0 +1,77 @@
+.news {
+  background: #e8e8e8;
+  padding: 12.4rem 0;
+  text-align: center;
+
+  &__title {
+    font-size: 4rem;
+    font-family: $headings;
+    font-style: italic;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    max-width: 1250px;
+    margin: 0 auto 6.5rem;
+    display: block;
+
+    @include break($large) {
+     
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-flow: column;
+    margin: 0 auto;
+    
+    @include break($large) {
+      width: 1100px;
+     
+    }
+
+    &__input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 3rem;
+      padding: 10px;
+    }
+
+    &__button {
+      border: none;
+      background: $color-secondary;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      padding-left: 2rem;
+      position: relative;
+      
+      @include break($large) {
+        width: 600px;
+       
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 2rem;
+        top: 16px;
+        background: url(../images/arrow.png);
+        z-index: 100;
+        width: 39px;
+
+        height: 27px;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.products {
+  display: grid;
+  grid
+  width: 100%;
+  max-width: 1600px;
+  margin: 6.2rem auto;
+
+  @include break($medium) {
+    margin: 12.5rem auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product {
+
+
+    &__image {
+      width: 100%;
+      height: auto;
+    }
+
+    &__title {
+      font-size: 1.75rem;
+      font-family: $headings;
+    }
+
+    &__subtitle {
+      font-size: 1.125rem;
+    }
+
+    &__plus {
+
+    }
+  }
+
+  section {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}

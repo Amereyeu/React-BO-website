@@ -1,0 +1,71 @@
+.footer {
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: rem;
+  color: $color-secondary;
+
+  &__logo {
+    width: 80px;
+    height: 200px;
+
+    @include break($medium) {
+      width: 120px;
+      height: 300px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 3rem;
+
+    &__item {
+      font-family: $headings;
+      font-style: italic;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      cursor: pointer;
+
+      @include break($medium) {
+        font-size: 2.5rem;
+      }
+
+      @include break($large) {
+        font-size: 4rem;
+      }
+
+      &:hover {
+        color: rgb(145, 144, 144);
+      }
+    }
+  }
+
+  &__social {
+    list-style: none;
+
+    @include break($medium) {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+    }
+
+    @include break($large) {
+      justify-content: left;
+    }
+
+    &__item {
+      margin: 0 1rem;
+      cursor: pointer;
+      font-size: 1rem;
+
+      @include break($medium) {
+        font-size: 1.25rem;
+      }
+
+      &:hover {
+        color: rgb(145, 144, 144);
+      }
+    }
+  }
+}

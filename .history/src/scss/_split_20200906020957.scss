@@ -1,0 +1,63 @@
+.info {
+  max-width: 1600px;
+  margin: 12.5rem auto;
+
+  &__left {
+    display: grid;
+    grid-template-columns: minmax(150px, 620px) 1fr;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &__image {
+      width: ;
+      height: 640px;
+      background: url(../images/woman.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-family: $headings;
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 4rem;
+    }
+  }
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr minmax(150px, 620px);
+    align-items: center;
+
+    &__image {
+      width: 620px;
+      height: 640px;
+      background: url(../images/man.jpg) no-repeat center;
+      background-size: cover;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-family: $headings;
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 4rem;
+    }
+  }
+}

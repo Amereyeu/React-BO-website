@@ -1,0 +1,48 @@
+{
+  "headphones": [
+    {
+      "id": 1,
+      "image": "./images/bo3.jpg",
+      "title": "headphones",
+      "subtitle": "Let the magic unfold"
+    },
+    {
+      "id": 2,
+      "image": "./images/bo2.jpg",
+      "title": "SuperX",
+      "subtitle": "Di2"
+    },
+    {
+      "id": 3,
+      "image": "./images/bo4.jpg",
+      "title": "CAAD Optimo",
+      "subtitle": "Tiagra"
+    },
+    {
+      "id": 4,
+      "image": "./images/bo5.j",
+      "title": "Topstone Carbon",
+      "subtitle": "Lefty 1"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "./images/h95.jpg",
+      "title": "Beoplay H95",
+      "subtitle": "Adaptive ANC headphones."
+    },
+    {
+      "id": 2,
+      "image": "./images/e8.jpg",
+      "title": "Beoplay E8 Sport",
+      "subtitle": "Powerful bluetooth sports headphones."
+    },
+    {
+      "id": 3,
+      "image": "./images/h4.jpg",
+      "title": "Beoplay H4",
+      "subtitle": "Pure expression. Superior sound."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+.hero {
+  margin: 12.5rem 0;
+  text-align: center;
+  
+  &__title {
+    font-size: 4rem;
+    font-family: $headings;
+font-style: italic;
+margin-bottom: 2rem;
+text-transform: uppercase;
+  }
+
+  &__text {
+    font-style: 1.875rem;
+    text-transform: uppercase;
+    margin-bottom: 12.5rem;
+    max-width: 12;
+  }
+
+  &__image {
+  }
+}

@@ -1,0 +1,36 @@
+.info {
+max-width: 1600px;
+margin: 0 auto;
+
+  &__left {
+    display: grid;
+    grid-template-columns: minmax(150px, 620px) 1fr;
+    border: 1px solid red;
+   align-items: center;
+
+    &__image {
+      max-width: 620px;
+      _max-height: 640px;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-family: $headings;
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    section {
+      
+    }
+  }
+
+  &__right {
+
+  }
+}

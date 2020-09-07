@@ -1,0 +1,105 @@
+.info {
+  width: 100%;
+  max-width: 1600px;
+  margin: 12.5rem auto;
+
+  &__left {
+    //display: grid;
+    align-items: center;
+
+    @include break($medium) {
+      //grid-template-columns: minmax(300px, 1fr) 1fr;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-flow: row;;
+    }
+
+    &__image {
+      width: 300px;
+      height: 310px;
+      background: url(../images/woman.jpg) no-repeat center;
+      background-size: cover;
+      margin: 0 auto;
+
+      @include break($medium) {
+        width: 400px;
+        height: 410px;
+        _margin: 0;
+      }
+
+      @include break($xlarge) {
+        width: 620px;
+        height: 640px;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-family: $headings;
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 600px;
+      
+
+      @include break($medium) {
+        padding: 4rem;
+      }
+    }
+  }
+
+  &__right {
+    display: grid;
+    align-items: center;
+
+    @include break($medium) {
+      grid-template-columns: 1fr minmax(300px, 620px);
+    }
+
+    &__image {
+      width: 300px;
+      height: 310px;
+      background: url(../images/man.jpg) no-repeat center;
+      background-size: cover;
+      margin: 0 auto;
+
+      @include break($medium) {
+        width: 400px;
+        height: 410px;
+        margin: 0;
+      }
+
+      @include break($xlarge) {
+        width: 620px;
+        height: 640px;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-family: $headings;
+      text-transform: uppercase;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    &__text {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 2rem;
+
+      @include break($medium) {
+        padding: 4rem;
+      }
+    }
+  }
+}

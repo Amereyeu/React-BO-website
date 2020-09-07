@@ -1,0 +1,55 @@
+.footer {
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: 4rem;
+  color: $color-secondary;
+
+  &__logo {
+    width: 80px;
+    height: 200px;
+
+    @include break($medium) {
+     
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 3rem;
+
+    &__item {
+      font-family: $headings;
+      font-style: italic;
+      font-size: 2rem;
+      text-transform: capitalize;
+      margin-bottom: 1rem;
+      cursor: pointer;
+
+      @include break($medium) {
+       font-size: 4rem;
+      }
+
+      &:hover {
+        color: rgb(145, 144, 144);
+      }
+    }
+  }
+
+  &__social {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    display: none;
+
+    &__item {
+      margin: 0 1rem;
+      font-size: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(145, 144, 144);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.info {
+max-width: 1600px;
+margin: 0 auto;
+
+  &__left {
+    display: grid;
+    grid-template-columns: minmax(150px, 620px) 1fr;
+    border: 1px solid red;
+   align-items: center;
+
+    &__image {
+      max-width: 620px;
+      _max-height: 640px;
+    }
+
+    &
+  }
+
+  &__right {
+
+  }
+}

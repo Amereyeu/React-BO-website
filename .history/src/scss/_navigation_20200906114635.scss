@@ -1,0 +1,103 @@
+.navigation {
+  position: absolute;
+  z-index: 999;
+  color: $color-secondary;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+
+  @include break($large) {
+    display: grid;
+    grid-template-columns: 200px 1fr 80px 100px 50px;
+    padding: 4.5rem 2rem 0;
+  }
+
+  &__shop,
+  &__cart,
+  &__count {
+    display: none;
+
+    @include break($medium) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    img {
+      display: block;
+      width: 200px;
+
+      @include break($medium) {
+        width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__toggle {
+    display: block;
+    border-radius: 5px;
+    background-color: transparent;
+    float: right;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    padding: 8px 8px;
+
+    &.open span:first-child {
+      transform: rotate(45deg) translate(4.4px, 4.4px);
+    }
+
+    &.open span:nth-child(2) {
+      width: 0%;
+      opacity: 0;
+    }
+
+    &.open span:last-child {
+      transform: rotate(-45deg) translate(4.4px, -4.4px);
+    }
+
+    span {
+      position: relative;
+      display: block;
+      height: 2px;
+      width: 100%;
+      margin-top: 4px;
+      background-color: $color-secondary;
+      transition: all 0.25s;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    z-index: 50;
+    _float: left;
+    text-align: left;
+    border: 1px solid red;
+    width: 100%;
+    background: rgba(0,0,0, .8);
+
+    &.collapse {
+      max-height: 25em !important;
+    }
+
+    li {
+      display: block;
+      padding: 0.5em 0;
+      font-family: $headings;
+      font-size: 1.4rem;
+      color: $color-secondary;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}

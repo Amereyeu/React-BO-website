@@ -1,0 +1,15 @@
+.info {
+max-width: 1600px;
+margin: 0 auto;
+border: 1px solid red;
+
+  &__left {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    border: 1px solid red;
+  }
+
+  &__right {
+
+  }
+}

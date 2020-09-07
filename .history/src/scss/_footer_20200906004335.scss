@@ -1,0 +1,11 @@
+.footer {
+  background: black;
+  width: 100%;
+  text-align: center;
+  padding: 4rem;;
+
+  &__logo {
+    border: 1px solid red;
+    stroke: white;
+  }
+}
