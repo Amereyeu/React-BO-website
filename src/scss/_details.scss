@@ -1,0 +1,75 @@
+.product__detail {
+  display: flex;
+  margin: 12.5rem auto;
+  width: 100%;
+  max-width: 1600px;
+
+  &__left {
+    display: flex;
+    flex-flow: column;
+
+    &__image {
+    }
+  }
+
+  &__right {
+    &__title {
+      font-size: 1.5rem;
+      line-height: 1.25;
+      margin-bottom: 2.4rem;
+    }
+
+    &__subtitle {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 300;
+      word-break: break-word;
+    }
+
+    &__text {
+      font-size: 1rem;
+      letter-spacing: 2px;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    &__prize {
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: 1px;
+      line-height: 1.25;
+      margin-bottom: 1.5rem;
+    }
+
+    &__availability {
+      margin-bottom: 1.5rem;
+    }
+
+    &__color {
+    }
+  }
+}
+
+
+.green {
+  color: rgb(41, 151, 60);
+  font-weight: 700;
+}
+
+.red {
+  color: rgb(255, 0, 0);
+  font-weight: 700;
+}
+
+.button {
+  border: 1px solid #000;
+  width: 150px;
+  display: block;
+  margin-left: 2rem;
+  padding: .5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 900;
+}

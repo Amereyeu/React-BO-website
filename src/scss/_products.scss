@@ -11,8 +11,8 @@
   }
 
   @include break($large) {
-   grid-template-columns: repeat(3, 1fr);
-  };
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   .product {
     &__image {
@@ -23,10 +23,16 @@
     &__title {
       font-size: 1.75rem;
       font-family: $headings;
+      color: #000;
     }
 
     &__subtitle {
       font-size: 1.125rem;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
     }
   }
 

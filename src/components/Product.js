@@ -1,5 +1,6 @@
 import React from "react";
 import plus from "../images/plus.png";
+import { Link } from "react-router-dom";
 
 function Product({ product }) {
   return (
@@ -10,9 +11,13 @@ function Product({ product }) {
         alt={product.subtitle}
       />
 
+
+
       <section>
         <div>
-          <h2 className="product__title">{product.title}</h2>
+          <Link to={`/detail/${product.id}`}>
+            <h2 className="product__title">{product.title}</h2>
+          </Link>
           <h4 className="product__subtitle">{product.subtitle}</h4>
         </div>
         <img src={plus} alt="add to cart" className="product__plus" />

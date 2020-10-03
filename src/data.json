@@ -2,25 +2,25 @@
   "headphones": [
     {
       "id": 1,
-      "image": "./images/bo3.jpg",
+      "image": "../images/bo3.jpg",
       "title": "Headphones",
       "subtitle": "Let the magic unfold"
     },
     {
       "id": 2,
-      "image": "./images/bo2.jpg",
+      "image": "../images/bo2.jpg",
       "title": "Craft maters",
       "subtitle": "Most luxurious headphones"
     },
     {
       "id": 3,
-      "image": "./images/bo4.jpg",
+      "image": "../images/bo4.jpg",
       "title": "Robust",
       "subtitle": "Pure and powerful sound"
     },
     {
       "id": 4,
-      "image": "./images/bo5.jpg",
+      "image": "../images/bo5.jpg",
       "title": "Ultra-light",
       "subtitle": "Advanced Active Noise Cancellation"
     }
@@ -28,21 +28,63 @@
   "products": [
     {
       "id": 1,
-      "image": "./images/h95.jpg",
+      "image": "../images/h95.jpg",
       "title": "Beoplay H95",
-      "subtitle": "Adaptive ANC headphones."
+      "subtitle": "Adaptive ANC headphones.",
+      "text": "Celebrating 95 years of heritage in sound, design and craft excellence. Beoplay H95 is crafted for the ultimate listening experience with long lasting comfort and effective Active Noise Cancellation.",
+      "prize": 800,
+      "size": [48, 54, 56],
+      "availability": 10
     },
     {
       "id": 2,
-      "image": "./images/e8.jpg",
+      "image": "../images/e8.jpg",
       "title": "Beoplay E8 Sport",
-      "subtitle": "Powerful bluetooth sports headphones."
+      "subtitle": "Powerful bluetooth sports headphones.",
+      "text": "Wireless earphones designed for sport. Expertly crafted for powerful music performance in any weather. Waterproof, secure-fitting, and long-lasting battery life.",
+      "prize": 350,
+      "size": [48, 54, 56],
+      "availability": 7
     },
     {
       "id": 3,
-      "image": "./images/h4.jpg",
+      "image": "../images/h4.jpg",
       "title": "Beoplay H4",
-      "subtitle": "Pure expression. Superior sound."
+      "subtitle": "Pure expression. Superior sound.",
+      "text": "Contemporary over-ear headphones with long-lasting comfort, superior sound and voice assistant.",
+      "prize": 300,
+      "size": [48, 54, 56],
+      "availability": 0
+    },
+    {
+      "id": 4,
+      "image": "../images/be1.jpg",
+      "title": "Beosound 1",
+      "subtitle": "Portable Wi-Fi and Bluetooth speaker",
+      "text": "Place it anywhere. Pair it or play it solo. Portable wireless speaker with 360-degree sound designed for flexible music streaming.",
+      "prize": 1500,
+      "size": [48, 54, 56],
+      "availability": 10
+    },
+    {
+      "id": 5,
+      "image": "../images/so1.jpg",
+      "title": "Beosound Stage",
+      "subtitle": "Powerful Dolby Atmos Soundbar",
+      "text": "Powerful soundbar that brings Bang & Olufsen sound to your own TV without the need of a subwoofer.",
+      "prize": 1500,
+      "size": [48, 54, 56],
+      "availability": 20
+    },
+    {
+      "id": 6,
+      "image": "../images/tv1.jpg",
+      "title": "Beovision Eclipse",
+      "subtitle": "Crafted sound and design harmony",
+      "text": "With the world’s finest TV sound system, Beovision Eclipse TV is designed to integrate beautifully with your lifestyle.",
+      "prize": 3100,
+      "size": [48, 54, 56],
+      "availability": 30
     }
   ]
 }
