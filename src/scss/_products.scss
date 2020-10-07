@@ -19,15 +19,19 @@
       width: 100%;
       height: auto;
     }
-
+    
     &__title {
       font-size: 1.75rem;
       font-family: $headings;
       color: #000;
     }
-
+    
     &__subtitle {
       font-size: 1.125rem;
+    }
+    
+    &__plus {
+      cursor: pointer;
     }
 
     a:link,

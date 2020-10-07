@@ -1,0 +1,67 @@
+.checkout {
+  width: 90%;
+  max-width: 1600px;
+  margin: 6.2rem auto;
+
+  @include break(600px) {
+    margin: 12.5rem auto;
+    width: 70%;
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    outline: none;
+    font-size: 1.75rem;
+
+    @include break($medium) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__button {
+    border: none;
+    background: $color-secondary;
+    height: 40px;
+    display: block;
+    margin: 1.5rem auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: relative;
+    width: 200px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    outline: none;
+
+    @include break($medium) {
+      width: 420px;
+      font-size: 1.5rem;
+      text-align: left;
+      _padding-left: 2rem;
+      height: 60px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        right: 2rem;
+        top: 16px;
+        background: url(../images/arrow.png);
+        z-index: 100;
+        width: 39px;
+        height: 27px;
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__success {
+    text-align: center;
+  }
+}

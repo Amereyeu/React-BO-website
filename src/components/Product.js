@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import plus from "../images/plus.png";
 import { Link } from "react-router-dom";
+import { CartContext } from "../contexts/CartContext";
 
 function Product({ product }) {
+  const { addItem } = useContext(CartContext);
+
   return (
     <div className="product">
       <img
@@ -11,8 +14,6 @@ function Product({ product }) {
         alt={product.subtitle}
       />
 
-
-
       <section>
         <div>
           <Link to={`/detail/${product.id}`}>
@@ -20,7 +21,12 @@ function Product({ product }) {
           </Link>
           <h4 className="product__subtitle">{product.subtitle}</h4>
         </div>
-        <img src={plus} alt="add to cart" className="product__plus" />
+        <img
+          src={plus}
+          alt="add to cart"
+          className="product__plus"
+          onClick={() => addItem(product.id)}
+        />
       </section>
     </div>
   );

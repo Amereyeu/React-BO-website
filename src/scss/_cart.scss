@@ -1,0 +1,172 @@
+.cart__wrap {
+  margin: 12.5rem auto;
+  width: 100%;
+  max-width: 1600px;
+
+  .heading {
+    margin-left: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #000;
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+    @media screen and (max-width: 768px) {
+    .cart {
+      max-width: 600px;
+
+      
+    &__image {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__title, &__prize {
+      margin-bottom: 1rem;
+    }
+
+    &__amount {
+      width: 112px;
+      display: block;
+      margin: 0 auto 1rem;
+
+      button {
+        padding: 0 12px !important;
+      }
+    }
+    }
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+      display: block;
+    }
+    thead {
+      position: absolute;
+      opacity: 0;
+    }
+
+    tr {
+      margin: 1rem 0;
+    }
+
+    td {
+      border-bottom: 1px solid #fff;
+      display: grid;
+      grid-template-columns: 1fr ;
+
+      &:last-child {
+        border: 0;
+      }
+    }
+
+  }
+
+  .cart {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+    th {
+      background: #ddd;
+      padding: 0.5rem;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    &__headers {
+      font-size: 14px;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    &__image {
+      width: 140px;
+      height: 140px;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+    }
+
+    &__prize {
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(124, 125, 126);
+    }
+
+    &__amount {
+      display: inline-flex;
+      border: 1px solid #666;
+
+      button {
+        border: 0;
+        padding: 0 10px;
+        height: 48px;
+        line-height: 48px;
+        cursor: pointer;
+      }
+
+      .input {
+        height: 48px;
+        width: 50px;
+        border: 0;
+        line-height: 46px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #121212;
+        border-left: 1px solid #666;
+        border-right: 1px solid #666;
+        text-align: center;
+        background: transparent;
+        font-family: Open Sans;
+        border-radius: unset;
+      }
+    }
+
+    &__total {
+      font-size: 1.5rem;
+      color: rgb(124, 125, 126);
+    }
+
+    &__delete {
+      color: red;
+      font-weight: 900;
+      font-size: 1.2rem;
+      padding-top: 10px;
+      cursor: pointer;
+    }
+
+    a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: #000;
+}
+  }
+}
+
+.summary {
+  width: 90%;
+  margin: 4rem auto;
+  border-collapse: collapse;
+
+  &__total {
+    padding: 1rem;
+    font-weight: 900;
+    background: #ddd;
+    font-size: 1.25rem;
+    text-align: right;
+  }
+}
+
+.empty {
+  text-align: center;
+}
+
+
+

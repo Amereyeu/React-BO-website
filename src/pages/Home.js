@@ -5,6 +5,7 @@ import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
 
 function Home() {
+
   return (
     <>
       <Hero />

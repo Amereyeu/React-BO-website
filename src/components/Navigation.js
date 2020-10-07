@@ -1,21 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import logo from "../images/logo_w.svg";
+import { Link } from "react-router-dom";
+import { CartContext } from "../contexts/CartContext";
 
-function Navigation() {
+function Navigation({ scrollProducts }) {
+  const { cart } = useContext(CartContext);
+
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNavigation = () => {
     setIsNavOpen(!isNavOpen);
   };
+
   return (
     <>
-      <section className={`navigation ${isNavOpen ? "black" : ""}`} >
-        <div className="navigation__shop">Shop now</div>
-        <div className="navigation__logo">
-          <img src={logo} alt="logo" />
+      <section className={`navigation ${isNavOpen ? "black" : ""}`}>
+        <div className="navigation__shop" onClick={scrollProducts}>
+          Shop now
         </div>
-        <div className="navigation__cart">Cart</div>
-        <div className="navigation__count">0</div>
+        <Link to="/" className="navigation__logo">
+          <img src={logo} alt="logo" />
+        </Link>
+        <Link to="/cart" className="navigation__cart">
+          Cart
+        </Link>
+        <div className="navigation__count">{cart.length}</div>
         <div
           className={`navigation__toggle ${isNavOpen ? "open" : ""}`}
           onClick={toggleNavigation}
