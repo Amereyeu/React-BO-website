@@ -18,6 +18,7 @@ function Cart() {
   });
 
   return (
+    <>
     <div className="cart__wrap">
       <h2 className="heading">Shopping cart</h2>
 
@@ -122,6 +123,7 @@ function Cart() {
         </div>
       )}
     </div>
+    </>
   );
 }
 

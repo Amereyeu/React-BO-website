@@ -1,40 +1,48 @@
 .cart__wrap {
-  margin: 12.5rem auto;
   width: 100%;
   max-width: 1600px;
+  margin: 6.2rem auto;
+
+  @include break($medium) {
+    margin: 12.5rem auto;
+  }
 
   .heading {
     margin-left: 3rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     border-bottom: 1px solid #000;
-    width: 50%;
+    width: 72%;
     margin-bottom: 3rem;
+
+    @include break($medium) {
+      width: 50%;
+    }
   }
 
-    @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .cart {
       max-width: 600px;
 
-      
-    &__image {
-      display: block;
-      margin: 0 auto;
-    }
-
-    &__title, &__prize {
-      margin-bottom: 1rem;
-    }
-
-    &__amount {
-      width: 112px;
-      display: block;
-      margin: 0 auto 1rem;
-
-      button {
-        padding: 0 12px !important;
+      &__image {
+        display: block;
+        margin: 0 auto;
       }
-    }
+
+      &__title,
+      &__prize {
+        margin-bottom: 1rem;
+      }
+
+      &__amount {
+        width: 112px;
+        display: block;
+        margin: 0 auto 1rem;
+
+        button {
+          padding: 0 12px !important;
+        }
+      }
     }
 
     table,
@@ -57,13 +65,12 @@
     td {
       border-bottom: 1px solid #fff;
       display: grid;
-      grid-template-columns: 1fr ;
+      grid-template-columns: 1fr;
 
       &:last-child {
         border: 0;
       }
     }
-
   }
 
   .cart {
@@ -143,10 +150,13 @@
       cursor: pointer;
     }
 
-    a:link, a:visited, a:hover, a:active {
-  text-decoration: none;
-  color: #000;
-}
+    a:link,
+    a:visited,
+    a:hover,
+    a:active {
+      text-decoration: none;
+      color: #000;
+    }
   }
 }
 
@@ -167,6 +177,3 @@
 .empty {
   text-align: center;
 }
-
-
-

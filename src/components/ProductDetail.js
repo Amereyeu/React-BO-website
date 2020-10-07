@@ -17,21 +17,8 @@ export const ProductDetail = (route) => {
 
     setData(selectedProduct);
 
-    console.log("selected product:", selectedProduct);
-
     // eslint-disable-next-line
   }, []);
-
-  // useEffect(() => {
-  //     const productId = currentProductId;
-  //     const selectedProduct = product[0].products.filter(
-  //       (item) => item.id === parseInt(productId)
-  //     );
-
-  //     setData(selectedProduct);
-
-  //     console.log("selected product:", selectedProduct);
-  // }, []);
 
   return (
     <>

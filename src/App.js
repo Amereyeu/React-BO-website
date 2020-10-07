@@ -17,16 +17,13 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.scss";
 
 function App() {
-
-
-
   return (
     <ProductContextProvider>
       <CartContextProvider>
         <Router>
           <div className="App">
             <ScrollToTop />
-            <Navigation/>
+            <Navigation />
             <Slider />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -46,5 +43,3 @@ function App() {
 export default App;
 
 
-
-//todo: login

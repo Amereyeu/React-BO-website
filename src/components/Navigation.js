@@ -1,9 +1,9 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import logo from "../images/logo_w.svg";
 import { Link } from "react-router-dom";
 import { CartContext } from "../contexts/CartContext";
 
-function Navigation({ scrollProducts }) {
+function Navigation({ scrollShop }) {
   const { cart } = useContext(CartContext);
 
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,12 +12,29 @@ function Navigation({ scrollProducts }) {
     setIsNavOpen(!isNavOpen);
   };
 
+  const [position, setPosition] = useState("top");
+
+  useEffect(() => {
+    document.addEventListener("scroll", (e) => {
+      let scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 200) {
+        setPosition("moved");
+      } else {
+        setPosition("top");
+      }
+    });
+  }, []);
+
   return (
     <>
-      <section className={`navigation ${isNavOpen ? "black" : ""}`}>
-        <div className="navigation__shop" onClick={scrollProducts}>
-          Shop now
-        </div>
+      <section
+        className={`navigation ${isNavOpen ? "black" : ""}`}
+        style={{
+          backgroundColor:
+            position === "top" ? "rgba(0, 0, 0, 0)" : "rgba(0, 0, 0, .9)",
+        }}
+      >
+        <div className="navigation__shop" onClick={scrollShop} >Shop now</div>
         <Link to="/" className="navigation__logo">
           <img src={logo} alt="logo" />
         </Link>
